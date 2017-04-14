@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
     public int junkRotationSpeed = 250;
     public float junkTranslateSpeed = 0.01f;
     public float junkHeightMax = 6f;
-    public float junkHeightMin = 3f; 
+    public float junkHeightMin = 1f; 
 
     Vector3 movement;                   // The vector to store the direction of the player's movement.
     Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
@@ -48,6 +48,18 @@ public class PlayerController : MonoBehaviour {
         rotateJunk();
     }
 
+    private void Update()
+    {
+        foreach (Transform child in orbitingJunk.transform)
+        {
+            //child is your child transform
+            if (child.gameObject.tag == "Building")
+            {
+                child.transform.Rotate(2f, 2f, 5f);
+            }
+        }
+    }
+
     void Move(float h, float v)
     {
         // Set the movement vector based on the axis input.
@@ -73,16 +85,14 @@ public class PlayerController : MonoBehaviour {
             }
 
 
-
-
-            other.transform.parent = orbitingJunk.transform; 
-            //other.isTrigger = false;
+            other.isTrigger = false;
             //other.attachedRigidbody.detectCollisions = false;
             //other.attachedRigidbody.isKinematic = false;
-            //other.attachedRigidbody.useGravity = false;
+            other.attachedRigidbody.useGravity = false;
 
+            other.transform.parent = orbitingJunk.transform;
 
-
+          
 
 
 
@@ -128,7 +138,6 @@ public class PlayerController : MonoBehaviour {
             if (child.gameObject.tag == "Building")
             {
                 // Rotates Child Junk Piece around Cyclone
-                child.Rotate(new Vector3(0.5f, 0.2f, 0.2f));
                 child.RotateAround(transform.position, new Vector3(0, 1, 0), junkRotationSpeed*Time.deltaTime);
 
                 // Translate the Junk Piece in a sin/oscillation up and down
@@ -153,6 +162,14 @@ public class PlayerController : MonoBehaviour {
                 child.Translate(new Vector3(0, (junktranslateDirectionArray[junkPieceIndex] * junkTranslateSpeed), 0));
 
                 junkHeightArray[junkPieceIndex] = child.transform.position.y;
+
+
+
+                // Pull the junk back into the center
+                child.Translate((transform.GetChild(0).transform.position - child.position)*0.0001f);
+                
+
+
 
                 // next junk piece in array please
                 junkPieceIndex++;
