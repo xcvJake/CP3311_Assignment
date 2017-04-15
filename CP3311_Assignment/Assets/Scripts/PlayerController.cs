@@ -8,7 +8,8 @@ public class PlayerController : MonoBehaviour {
     public int junkRotationSpeed = 250;
     public float junkTranslateSpeed = 0.01f;
     public float junkHeightMax = 6f;
-    public float junkHeightMin = 1f; 
+    public float junkHeightMin = 1f;
+    public float cycloneMassLimit = 1f; 
 
     Vector3 movement;                   // The vector to store the direction of the player's movement.
     Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
@@ -48,17 +49,17 @@ public class PlayerController : MonoBehaviour {
         rotateJunk();
     }
 
-    private void Update()
-    {
-        foreach (Transform child in orbitingJunk.transform)
-        {
-            //child is your child transform
-            if (child.gameObject.tag == "Building")
-            {
-                child.transform.Rotate(2f, 2f, 5f);
-            }
-        }
-    }
+    //private void Update()
+    //{
+    //    foreach (Transform child in orbitingJunk.transform)
+    //    {
+    //        //child is your child transform
+    //        if (child.gameObject.tag == "Building")
+    //        {
+    //            child.transform.Rotate(2f, 2f, 5f);
+    //        }
+    //    }
+    //}
 
     void Move(float h, float v)
     {
@@ -74,9 +75,9 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Building")
+        if ((other.tag == "Building") && (other.attachedRigidbody.mass <= cycloneMassLimit))
         {
-
+            cycloneMassLimit += 0.1f; 
 
             // delete junk
             if (orbitingJunk.transform.childCount >= junkCount)
@@ -92,25 +93,6 @@ public class PlayerController : MonoBehaviour {
 
             other.transform.parent = orbitingJunk.transform;
 
-          
-
-
-
-
-
-
-            //transform.parent = other.transform;
-
-            //if(floatingJunk[junkIndex] != null)
-            //{
-            //    // Could also delete object
-            //    floatingJunk[junkIndex].gameObject.SetActive(false);
-
-            //    // Add the new piece of junk to the array
-            //    floatingJunk[junkIndex] = other.gameObject;
-
-            //}
-
             junkHeightArray[junkArrayIndex] = other.transform.position.y; // starts at where it is
             junktranslateDirectionArray[junkArrayIndex] = 1; // Up by default
             
@@ -122,10 +104,6 @@ public class PlayerController : MonoBehaviour {
             {
                 junkArrayIndex++;
             }
-            
-
-        
-            //other.gameObject.SetActive(false);
         }
     }
 
