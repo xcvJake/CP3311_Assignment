@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour {
     Transform orbitingJunk;
 
     public int junkCount = 10;
+    public float junkPercentMultiplier = 0.1f;
 
 
     private void Start()
@@ -77,7 +78,7 @@ public class PlayerController : MonoBehaviour {
     {
         if ((other.tag == "Building") && (other.attachedRigidbody.mass <= cycloneMassLimit))
         {
-            cycloneMassLimit += 0.1f; 
+            cycloneMassLimit += other.attachedRigidbody.mass * junkPercentMultiplier; 
 
             // delete junk
             if (orbitingJunk.transform.childCount >= junkCount)
