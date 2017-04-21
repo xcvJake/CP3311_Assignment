@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour {
 
     Transform orbitingJunk;
 
-    public int junkCount = 10;
+    public int junkCount = 500;
     public float junkPercentMultiplier = 0.1f;
 
 
     private void Start()
     {
-        junkHeightArray = new float[10];
-        junktranslateDirectionArray = new int[10];
+        junkHeightArray = new float[junkCount];
+        junktranslateDirectionArray = new int[junkCount];
         junkArrayIndex = 0;
         orbitingJunk = transform.FindChild("OrbitingJunk");
     }
