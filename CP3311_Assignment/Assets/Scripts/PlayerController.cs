@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour {
 
     Transform orbitingJunk;
 
-    public int junkCount = 500;
+    public int junkCount = 100;
     public float junkPercentMultiplier = 0.1f;
 
 
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if ((other.tag == "Building") && (other.attachedRigidbody.mass <= cycloneMassLimit))
+        if ((other.tag == "pickup") && (other.attachedRigidbody.mass <= cycloneMassLimit))
         {
             cycloneMassLimit += other.attachedRigidbody.mass * junkPercentMultiplier; 
 
@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour {
             junkHeightArray[junkArrayIndex] = other.transform.position.y; // starts at where it is
             junktranslateDirectionArray[junkArrayIndex] = 1; // Up by default
             
-            if (junkArrayIndex >= 9)
+            if (junkArrayIndex >= junkCount-1)
             {
                 junkArrayIndex = 0;
             }
@@ -114,44 +114,51 @@ public class PlayerController : MonoBehaviour {
         foreach (Transform child in orbitingJunk.transform)
         {
             //child is your child transform
-            if (child.gameObject.tag == "Building")
+            if (child.gameObject.tag == "pickup")
             {
                 // Rotates Child Junk Piece around Cyclone
                 child.RotateAround(transform.position, new Vector3(0, 1, 0), junkRotationSpeed*Time.deltaTime);
-
-                // Translate the Junk Piece in a sin/oscillation up and down
-
-                // Is the junk already above the maximum? 
-                if(junkHeightArray[junkPieceIndex] >= junkHeightMax)
-                {
-                    // junk go down
-                    junktranslateDirectionArray[junkPieceIndex] = -1; 
-                }
-                else if (junkHeightArray[junkPieceIndex] <= junkHeightMin)
-                {
-                    // junk go up
-                    junktranslateDirectionArray[junkPieceIndex] = 1;
-                }
-
-                // Increase/Decrease the junk height based on direction
-                //junkHeightArray[junkPieceIndex] += (junktranslateDirectionArray[junkPieceIndex] * junkHeightSine);
-
-                // Move the junk to the new location
-                //child.Translate(new Vector3(0, Mathf.Sin(junkHeightArray[junkPieceIndex])/10, 0));
-                child.Translate(new Vector3(0, (junktranslateDirectionArray[junkPieceIndex] * junkTranslateSpeed), 0));
-
-                junkHeightArray[junkPieceIndex] = child.transform.position.y;
-
-
-
-                // Pull the junk back into the center
-                child.Translate((transform.GetChild(0).transform.position - child.position)*0.0001f);
                 
+                if (orbitingJunk.childCount > junkCount)
+                {
+                    // if there are more junk pieces in the orbit than desired, delete the fuckers
+                    Destroy(orbitingJunk.GetChild(0).gameObject);
+                }
+                else
+                {
+                    // Else Rotate the junk like normal
+                    // Is the junk already above the maximum? 
+                    if (junkHeightArray[junkPieceIndex] >= transform.position.y + junkHeightMax)
+                    {
+                        // junk go down
+                        junktranslateDirectionArray[junkPieceIndex] = -1;
+                    }
+                    else if (junkHeightArray[junkPieceIndex] <= transform.position.y + junkHeightMin)
+                    {
+                        // junk go up
+                        junktranslateDirectionArray[junkPieceIndex] = 1;
+                    }
+
+                    // Increase/Decrease the junk height based on direction
+                    //junkHeightArray[junkPieceIndex] += (junktranslateDirectionArray[junkPieceIndex] * junkHeightSine);
+
+                    // Move the junk to the new location
+                    //child.Translate(new Vector3(0, Mathf.Sin(junkHeightArray[junkPieceIndex])/10, 0));
+                    child.Translate(new Vector3(0, (junktranslateDirectionArray[junkPieceIndex] * junkTranslateSpeed), 0));
+
+                    junkHeightArray[junkPieceIndex] = child.transform.position.y;
 
 
 
-                // next junk piece in array please
-                junkPieceIndex++;
+                    // Pull the junk back into the center
+                    child.Translate((transform.GetChild(0).transform.position - child.position) * 0.0001f);
+
+
+
+
+                    // next junk piece in array please
+                    junkPieceIndex++;
+                }
             }
         }
     }
