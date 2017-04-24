@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
     public float cycloneMassLimit = 1f; 
 
     Vector3 movement;                   // The vector to store the direction of the player's movement.
-    Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
+//    Rigidbody playerRigidbody;          // Reference to the player's rigidbody.
     float[] junkHeightArray;
     int[] junktranslateDirectionArray;
     int junkArrayIndex;
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour {
     void Awake()
     {
         // Set up references.
-        playerRigidbody = GetComponent<Rigidbody>();
+//        playerRigidbody = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate()
@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour {
             cycloneMassLimit += other.attachedRigidbody.mass * junkPercentMultiplier; 
 
             // delete junk
-            if (orbitingJunk.transform.childCount >= junkCount)
+            while (orbitingJunk.transform.childCount >= junkCount)
             {
                 Destroy(orbitingJunk.GetChild(0).gameObject);
             }
