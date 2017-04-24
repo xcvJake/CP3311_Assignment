@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 
         // Rotate the Junk around the player
         rotateJunk();
+		spinJunk();
     }
 
     //private void Update()
@@ -84,7 +85,8 @@ public class PlayerController : MonoBehaviour {
         transform.Rotate(0, horizontal, 0);
 
         float verticalTranslate = v * movementSpeed * Time.deltaTime;
-        float horizontalTranslate = h * movementSpeed * Time.deltaTime;
+        //float horizontalTranslate = h * movementSpeed * Time.deltaTime;
+		float horizontalTranslate = 0;
         transform.Translate(horizontalTranslate, 0, verticalTranslate);
 
 
@@ -110,7 +112,13 @@ public class PlayerController : MonoBehaviour {
 
             other.transform.parent = orbitingJunk.transform;
 
-            junkHeightArray[junkArrayIndex] = other.transform.position.y; // starts at where it is
+			//Add a random height, makes the orbiting look a little nicer
+			Vector3 randomHeight = other.transform.position + (transform.up.normalized * Random.Range(junkHeightMin, junkHeightMax));
+			other.transform.position = randomHeight;
+
+           	junkHeightArray[junkArrayIndex] = other.transform.position.y; // starts at where it is
+
+
             junktranslateDirectionArray[junkArrayIndex] = 1; // Up by default
             
             if (junkArrayIndex >= junkCount-1)
@@ -123,6 +131,17 @@ public class PlayerController : MonoBehaviour {
             }
         }
     }
+
+
+	private void spinJunk()
+	{
+		foreach (Transform child in orbitingJunk.transform) {
+			child.Rotate (Random.Range(0f, 5f), Random.Range(0f, 5f), Random.Range(0f, 5f));
+
+
+		}
+	}
+
 
     private void rotateJunk()
     {

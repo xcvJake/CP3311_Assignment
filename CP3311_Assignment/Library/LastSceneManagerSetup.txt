@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Earth.unity
+- path: Assets/EnvironmentTesting.unity
   isLoaded: 1
   isActive: 1

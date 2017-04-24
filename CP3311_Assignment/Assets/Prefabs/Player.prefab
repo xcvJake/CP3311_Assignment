@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 54978615528181566}
   - component: {fileID: 23190850295192392}
   - component: {fileID: 136053354991082900}
-  - component: {fileID: 114746426542694358}
+  - component: {fileID: 114048464386692792}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -324,7 +324,7 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1332025937667146}
   m_Enabled: 1
---- !u!114 &114746426542694358
+--- !u!114 &114048464386692792
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835025941326298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3e0db35b3434bf4e83c361e720afa68, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a28cc36260497249b90247ab6b70da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
@@ -343,8 +343,8 @@ MonoBehaviour:
   cycloneMassLimit: 1
   junkCount: 100
   junkPercentMultiplier: 0.1
-  turningSpeed: 50
-  movementSpeed: 50
+  turningSpeed: 100
+  movementSpeed: 10
 --- !u!114 &114917570259455288
 MonoBehaviour:
   m_ObjectHideFlags: 1
