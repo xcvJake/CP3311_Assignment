@@ -11,6 +11,22 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1835025941326298}
   m_IsPrefabParent: 1
+--- !u!1 &1158783310849910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4565078783412258}
+  - component: {fileID: 114952782362640166}
+  m_Layer: 0
+  m_Name: Raycaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1250807017984464
 GameObject:
   m_ObjectHideFlags: 1
@@ -125,7 +141,7 @@ GameObject:
   - component: {fileID: 54978615528181566}
   - component: {fileID: 23190850295192392}
   - component: {fileID: 136053354991082900}
-  - component: {fileID: 114048464386692792}
+  - component: {fileID: 114361102913626106}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -157,7 +173,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4497701469485174}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4230114495835130
 Transform:
@@ -179,11 +195,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1835025941326298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.3, y: 0, z: -9.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4797588414587918}
+  - {fileID: 4565078783412258}
   - {fileID: 4056343600617242}
+  - {fileID: 4797588414587918}
   - {fileID: 4203697577825576}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -200,6 +217,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4797588414587918}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4565078783412258
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158783310849910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4497701469485174}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4702375549092306
 Transform:
@@ -228,7 +258,7 @@ Transform:
   - {fileID: 4547467185904924}
   - {fileID: 4702375549092306}
   m_Father: {fileID: 4497701469485174}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20154285838713842
 Camera:
@@ -324,7 +354,7 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1332025937667146}
   m_Enabled: 1
---- !u!114 &114048464386692792
+--- !u!114 &114361102913626106
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -332,16 +362,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835025941326298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a28cc36260497249b90247ab6b70da8, type: 3}
+  m_Script: {fileID: 11500000, guid: 499688bd2aaaf7b4f86798c5ff7ffedb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  junkRotationSpeed: 250
-  junkTranslateSpeed: 0.01
-  junkHeightMax: 6
+  junkRotationSpeed: 4
   junkHeightMin: 1
   cycloneMassLimit: 1
-  junkCount: 100
+  junkCount: 250
   junkPercentMultiplier: 0.1
   turningSpeed: 100
   movementSpeed: 10
@@ -351,12 +378,27 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1332025937667146}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ac2c05b026d3e949bee3d4d6f70461c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1835025941326298}
+--- !u!114 &114952782362640166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158783310849910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e69ad43b783ab44584796a6e6b06901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  MaxHealth: 100
+  DamageRate: 1
+  HealRate: 5
 --- !u!124 &124523561443381514
 Behaviour:
   m_ObjectHideFlags: 1
@@ -373,10 +415,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.25
+  m_Radius: 3.5
   m_Height: 6
   m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!198 &198368066989345968
 ParticleSystem:
   m_ObjectHideFlags: 1

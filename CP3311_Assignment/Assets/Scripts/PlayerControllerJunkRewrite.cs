@@ -7,7 +7,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour {
 	public int junkRotationSpeed = 250;
 //	public float junkHeightMax = 6f;
 	public float junkHeightMin = 1f;
-	public float cycloneMassLimit = 1f; 
+	public static float cycloneMassLimit = 1f; 
 
 	Transform orbitingJunk;
 	CapsuleCollider cycloneCollider;
