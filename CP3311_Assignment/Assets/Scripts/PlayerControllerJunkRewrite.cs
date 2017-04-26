@@ -7,7 +7,8 @@ public class PlayerControllerJunkRewrite : MonoBehaviour {
 	public int junkRotationSpeed = 250;
 //	public float junkHeightMax = 6f;
 	public float junkHeightMin = 1f;
-	public static float cycloneMassLimit = 1f; 
+	public static float cycloneMassLimit = 1f;
+    // public float testingMassAdjust = 1f; //testing thing
 
 	Transform orbitingJunk;
 	CapsuleCollider cycloneCollider;
@@ -46,7 +47,10 @@ public class PlayerControllerJunkRewrite : MonoBehaviour {
 
 	void Update()
 	{
-		cleanupCyclone (); //This must be in Update if framerate depending cleanup is wanted
+        // Testing thing
+        //cycloneMassLimit = testingMassAdjust;
+
+        cleanupCyclone (); //This must be in Update if framerate depending cleanup is wanted
 	}
 
 	void cleanupCyclone(){
