@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerControllerJunkRewrite : MonoBehaviour
 {
 
-	public int junkRotationSpeed = 250;
+	public int junkRotationSpeed = 10;
 	//	public float junkHeightMax = 6f;
 	public float junkHeightMin = 1f;
 	public static float cycloneMassLimit = 1f;
+
+	public int maxItemsForced = 400;
 	// public float testingMassAdjust = 1f; //testing thing
 
 	Transform orbitingJunk;
@@ -68,7 +70,8 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 				int childKillingPower = FPSLimit - (int)(1.0f / Time.deltaTime);
 				//childKillingPower = childKillingPower * childKillingPower; 	//EXPONENTIAL CHILD KILLING POWER WAHAHAHA 
 				childKillingPower = childKillingPower * 30; // Ok, note to self, too much child killing, lets tone it down. Murderer.
-				childKillingPower = childKillingPower > orbitingJunk.childCount ? orbitingJunk.childCount : childKillingPower;
+				childKillingPower = maxItemsForced < transform.childCount ? transform.childCount-maxItemsForced : childKillingPower; //Forced Max Items Check
+				childKillingPower = childKillingPower > orbitingJunk.childCount ? orbitingJunk.childCount : childKillingPower; //Dont overkill the cyclone check
 
 				for (int i = 0; i < childKillingPower; i++) {
 					Destroy (orbitingJunk.GetChild (i).gameObject);
@@ -105,10 +108,12 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 
 			other.isTrigger = false;
 			other.attachedRigidbody.useGravity = false;
-		
+			other.attachedRigidbody.isKinematic = true;
+
 			other.transform.parent = orbitingJunk.transform;
 
 			//Add a random height, makes the orbiting look a little nicer, from the ground to height of collider
+			other.transform.position = new Vector3(other.transform.position.x, transform.position.y,other.transform.position.z);
 			Vector3 randomHeight = other.transform.position + (transform.up.normalized * Random.Range (junkHeightMin, cycloneCollider.height));
 			other.transform.position = randomHeight;
 
