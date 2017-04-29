@@ -11,6 +11,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public static float cycloneMassLimit = 1f;
 
 	public int maxItemsForced = 400;
+	public int minItemsForced = 20;
 	// public float testingMassAdjust = 1f; //testing thing
 
 	Transform orbitingJunk;
@@ -22,6 +23,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public float turningSpeed = 100;
 	public float movementSpeed = 10;
 
+	float deltaTime = 0.0f;
 
 	private void Start ()
 	{
@@ -50,27 +52,45 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 
 	void Update ()
 	{
-		// Testing thing
-		//cycloneMassLimit = testingMassAdjust;
+		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
 
 		cleanupCyclone (); //This must be in Update if framerate depending cleanup is wanted
+
 	}
+
 
 	int numberOfFPSLoops = 0;
 
 	void cleanupCyclone ()
 	{
+		float fps = 1.0f / deltaTime;
+		//print (fps);
+		if (orbitingJunk.childCount < minItemsForced) {
+			//print ("TooSmall");
+			return;
+		}
 
-		int FPSLimit = 20; //Note this is not real FPS, it includes drawing time and whatnot, so kinda hovers around half the fps
+		if (orbitingJunk.childCount > maxItemsForced) {
+			for (int i = 0; i < (orbitingJunk.childCount - maxItemsForced); i++) {
+				Destroy (orbitingJunk.GetChild (i).gameObject);
+			}
+			return;
+		}
 
-		if (1.0f / Time.deltaTime < FPSLimit) { //If FPS < 30, start removing items. So higher end pcs can enjoy a large number of items
+
+
+
+		int FPSLimit = 10; //Note this is not real FPS, it includes things other than drawing time and whatnot, so is kinda just "Time to calculate stuff"
+
+		if (fps < FPSLimit) { //If FPS < 30, start removing items. So higher end pcs can enjoy a large number of items
+			//print("KillThem");
 			numberOfFPSLoops++;
-			if (numberOfFPSLoops > FPSLimit / 2) { //Make sure fps drop has been going on longer than half a second
+			if (numberOfFPSLoops > FPSLimit / 3) { //Make sure fps drop has been going on longer than third of second
 				
-				int childKillingPower = FPSLimit - (int)(1.0f / Time.deltaTime);
+				int childKillingPower = FPSLimit - (int)(fps);
 				//childKillingPower = childKillingPower * childKillingPower; 	//EXPONENTIAL CHILD KILLING POWER WAHAHAHA 
 				childKillingPower = childKillingPower * 30; // Ok, note to self, too much child killing, lets tone it down. Murderer.
-				childKillingPower = maxItemsForced < transform.childCount ? transform.childCount-maxItemsForced : childKillingPower; //Forced Max Items Check
+
 				childKillingPower = childKillingPower > orbitingJunk.childCount ? orbitingJunk.childCount : childKillingPower; //Dont overkill the cyclone check
 
 				for (int i = 0; i < childKillingPower; i++) {

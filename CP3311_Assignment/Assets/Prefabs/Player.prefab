@@ -585,7 +585,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -639,7 +639,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -723,6 +723,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   junkRotationSpeed: 4
   junkHeightMin: 1
+  maxItemsForced: 400
+  minItemsForced: 20
   junkPercentMultiplier: 0.1
   turningSpeed: 100
   movementSpeed: 15
