@@ -28,6 +28,7 @@ public class WorldScalingController : MonoBehaviour
 
 	void Update ()
 	{
+		
 		//Scale the world based on the mass of the cyclone.  
 		Vector3 newScale = startingWorldScale - (new Vector3 (scalingAmount, scalingAmount, scalingAmount) * (PlayerControllerJunkRewrite.cycloneMassLimit - startingWeight));
 
@@ -35,13 +36,18 @@ public class WorldScalingController : MonoBehaviour
 			//Based on the scaling we will do, we will need to move the piviot point, so as to seem like we are scaling around a point
 			float RelativeScale = (newScale.x / transform.localScale.x);
 			if (RelativeScale != 1) {
+
+				//The maths
 				Vector3 vectorBetweenEnvironmentAndPlayer = (transform.position - player.position);
 				transform.position = (vectorBetweenEnvironmentAndPlayer * RelativeScale) + player.position;
+				transform.localScale = newScale.x < smallestScale ? new Vector3 (smallestScale, smallestScale, smallestScale) : newScale;
+
 			}
-			transform.localScale = newScale.x < smallestScale ? new Vector3 (smallestScale, smallestScale, smallestScale) : newScale;
+			
 		} 
 
 		/* We could scale the objects that are currently inside of the cyclone, but I think the occasional silly large item looks really cool */
+
 
 	}
 }
