@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/SceneOne.unity
-=======
-- path: Assets/CityMap.unity
->>>>>>> 0d06ae472b8b81dd02e504f39bd954838f8bb562
   isLoaded: 1
   isActive: 1
