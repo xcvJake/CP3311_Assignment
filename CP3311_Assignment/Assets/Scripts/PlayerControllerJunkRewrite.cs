@@ -11,6 +11,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public static float cycloneMassLimit = 1f;
 
 	public int maxItemsForced = 400;
+	public int minItemsForced = 20;
 	// public float testingMassAdjust = 1f; //testing thing
 
 	Transform orbitingJunk;
@@ -60,6 +61,11 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 
 	void cleanupCyclone ()
 	{
+
+		if (minItemsForced > transform.childCount) {
+			return;
+		}
+
 
 		int FPSLimit = 20; //Note this is not real FPS, it includes drawing time and whatnot, so kinda hovers around half the fps
 
