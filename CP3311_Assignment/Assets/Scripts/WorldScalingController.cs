@@ -19,10 +19,12 @@ public class WorldScalingController : MonoBehaviour
 	public float smallestScale = 0.1f;
 	float startingWeight;
 	Vector3 startingWorldScale;
+	Transform orbitingStuff;
 	void Start ()
 	{
 		startingWeight = PlayerControllerJunkRewrite.cycloneMassLimit; //Allows us to start with any mass and not scale the world on start
 		startingWorldScale = transform.localScale; //Allows us to start with the map at any scale
+		orbitingStuff = player.FindChild("OrbitingJunk");
 	}
 
 
@@ -41,6 +43,10 @@ public class WorldScalingController : MonoBehaviour
 				Vector3 vectorBetweenEnvironmentAndPlayer = (transform.position - player.position);
 				transform.position = (vectorBetweenEnvironmentAndPlayer * RelativeScale) + player.position;
 				transform.localScale = newScale.x < smallestScale ? new Vector3 (smallestScale, smallestScale, smallestScale) : newScale;
+
+
+				//Also update the items in the cyclone, is bad that it is here, but makes the maths and transfer of information so much easier
+				orbitingStuff.transform.localScale = orbitingStuff.transform.localScale * RelativeScale;
 
 			}
 			
