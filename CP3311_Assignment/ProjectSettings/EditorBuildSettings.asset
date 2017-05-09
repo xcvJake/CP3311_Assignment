@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/StartMenu.unity
   - enabled: 1
     path: Assets/SceneOne.unity
+  - enabled: 1
+    path: Assets/CityMapSmaller.unity
+  - enabled: 1
+    path: Assets/Earth.unity
