@@ -39,7 +39,7 @@ public class PlanetController : MonoBehaviour {
 	{
 
 				// Set the movement vector based on the axis input.
-		movement.Set(-v, 0f, h);  //These are swapped since this is the perspective of the planet not the player ;)
+		movement.Set(h, 0f, v);  //These are swapped since this is the perspective of the planet not the player ;)
 
 		// Normalise the movement vector and make it proportional to the speed per second.
 		transform.Rotate(movement, speed * Time.deltaTime, Space.World);
