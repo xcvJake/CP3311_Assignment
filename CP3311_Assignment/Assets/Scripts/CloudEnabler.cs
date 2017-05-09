@@ -7,6 +7,7 @@ public class CloudEnabler : MonoBehaviour {
 	public string nextLevel;
 	public int flashingLimit;
 	public GameObject LoadingScreenObject;
+	public bool printMass = false;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,9 @@ public class CloudEnabler : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (printMass) {
+			print (PlayerControllerJunkRewrite.cycloneMassLimit);
+		}
 		if (PlayerControllerJunkRewrite.cycloneMassLimit > flashingLimit) { //If it is time for the clouds to start flashing
 			foreach (Transform child in transform) {
 				child.GetComponent<Animator> ().enabled = true;
@@ -26,7 +30,6 @@ public class CloudEnabler : MonoBehaviour {
 
 	public void Ouch(Collider A){
 		if (A.CompareTag ("Player") && PlayerControllerJunkRewrite.cycloneMassLimit > flashingLimit) {
-			print ("LOADING");
 			UnityEngine.SceneManagement.SceneManager.LoadSceneAsync (nextLevel);
 			LoadingScreenObject.SetActive (true);
 		}

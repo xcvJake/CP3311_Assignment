@@ -8,7 +8,7 @@ public class PauseButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Time.timeScale = 1.0f;		
 	}
 
 	bool paused = false;
