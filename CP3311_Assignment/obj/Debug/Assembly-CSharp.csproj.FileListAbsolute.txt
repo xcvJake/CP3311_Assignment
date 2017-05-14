@@ -27,3 +27,4 @@ E:\CP3311 Simulation Assignment\CP3311_Assignment\CP3311_Assignment\Temp\bin\Deb
 E:\CP3311 Simulation Assignment\CP3311_Assignment\CP3311_Assignment\Temp\bin\Debug\UnityEngine.VR.xml
 E:\CP3311 Simulation Assignment\CP3311_Assignment\CP3311_Assignment\obj\Debug\Assembly-CSharp.dll
 E:\CP3311 Simulation Assignment\CP3311_Assignment\CP3311_Assignment\obj\Debug\Assembly-CSharp.pdb
+E:\CP3311 Simulation Assignment\CP3311_Assignment\CP3311_Assignment\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

@@ -85,11 +85,11 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 		if (fps < FPSLimit) { //If FPS < 30, start removing items. So higher end pcs can enjoy a large number of items
 			//print("KillThem");
 			numberOfFPSLoops++;
-			if (numberOfFPSLoops > FPSLimit / 2) { //Make sure fps drop has been going on longer than third of second
+			if (numberOfFPSLoops > FPSLimit / 1.0f) { //Make sure fps drop has been going on longer than third of second
 				
 				int childKillingPower = FPSLimit - (int)(fps);
 				//childKillingPower = childKillingPower * childKillingPower; 	//EXPONENTIAL CHILD KILLING POWER WAHAHAHA 
-				childKillingPower = childKillingPower * 30; // Ok, note to self, too much child killing, lets tone it down. Murderer.
+				childKillingPower = childKillingPower * 20; // Ok, note to self, too much child killing, lets tone it down. Murderer.
 
 				childKillingPower = childKillingPower > orbitingJunk.childCount ? orbitingJunk.childCount-minItemsForced : childKillingPower; //Dont overkill the cyclone check
 
