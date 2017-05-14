@@ -50885,8 +50885,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: CityMapSmaller
-  flashingLimit: 50
-  LoadingScreenObject: {fileID: 0}
+  flashingLimit: 40
+  LoadingScreenObject: {fileID: 1037148157}
   printMass: 0
 --- !u!1 &1407582385
 GameObject:
