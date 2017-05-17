@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4097422020307408}
   - component: {fileID: 33043156362907176}
   - component: {fileID: 23938872563173026}
-  - component: {fileID: 64648010665616792}
   - component: {fileID: 54835902276424992}
+  - component: {fileID: 65260065959402560}
   m_Layer: 0
   m_Name: Tree_Common
   m_TagString: pickup
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056326408097228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.2, y: -1.7476563e-15, z: 95.1}
+  m_LocalPosition: {x: 210.3, y: 0, z: 48.2}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,17 +97,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64648010665616792
-MeshCollider:
+--- !u!65 &65260065959402560
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056326408097228}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 67e172afda5627c4c80261c4ce5caff0, type: 3}
+  m_Size: {x: 16.533478, y: 30.130722, z: 19.484976}
+  m_Center: {x: 0.08239889, y: 15.065361, z: -0.22502804}

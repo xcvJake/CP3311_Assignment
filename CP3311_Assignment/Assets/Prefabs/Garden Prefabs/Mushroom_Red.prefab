@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4232814589320124}
   - component: {fileID: 33020814255144932}
   - component: {fileID: 23895384250325698}
-  - component: {fileID: 64872411910476564}
   - component: {fileID: 54258140175396180}
+  - component: {fileID: 65096216712709550}
   m_Layer: 0
   m_Name: Mushroom_Red
   m_TagString: pickup
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1299620627699622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 201.89, y: -7.40832e-15, z: 220.62}
+  m_LocalPosition: {x: -12.15, y: 0, z: -9.36}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,17 +99,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64872411910476564
-MeshCollider:
+--- !u!65 &65096216712709550
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1299620627699622}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: cbac18cf13e9115468c28bba1a938ec8, type: 3}
+  m_Size: {x: 4.168277, y: 3.2258887, z: 3.6973157}
+  m_Center: {x: 0.040068746, y: 1.6129444, z: -0.0028514266}

@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4324438651246540}
   - component: {fileID: 33133084317811042}
   - component: {fileID: 23367318919687428}
-  - component: {fileID: 64531292624548468}
   - component: {fileID: 54615242388950786}
+  - component: {fileID: 65164907424693394}
+  - component: {fileID: 205673748742919030}
   m_Layer: 0
   m_Name: Grass_Blade_Small
   m_TagString: pickup
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839998609729068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 141.6, y: 0, z: 246.3}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,17 +97,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64531292624548468
-MeshCollider:
+--- !u!65 &65164907424693394
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839998609729068}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 310b0db4fbb70e44e8955fb4ea8978f8, type: 3}
+  m_Size: {x: 2.1245553, y: 2.225802, z: 1.9571623}
+  m_Center: {x: -0.29226354, y: 1.112901, z: -0.28410596}
+--- !u!205 &205673748742919030
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1839998609729068}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.2922635, y: 1.112901, z: -0.28410596}
+  m_Size: 2.225802
+  m_FadeMode: 1
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0037328987
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23367318919687428}
+  m_Enabled: 1

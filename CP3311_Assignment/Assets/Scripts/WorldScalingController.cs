@@ -52,43 +52,10 @@ public class WorldScalingController : MonoBehaviour
 			
 		} 
 
-		/* We could scale the objects that are currently inside of the cyclone, but I think the occasional silly large item looks really cool */
+
 
 
 	}
 }
 
 
-/*
-     * 
-     * /----------------------------------------\
-		* |       MAKE SURE THE ENVIRONMENT        |
-		* |            GAMEOBJECT IS               |
-		* |      AT WORLD CO-ORD: [0,0,0] !!!!     |
-		* \----------------------------------------/
-		*  why, because fuk u thats why.
-     *  also because the cyclone repositioning moves the it towards origin. 
-     */
-
-//        cycloneMassLimit = PlayerControllerJunkRewrite.cycloneMassLimit;
-//
-//        if(cycloneMassLimit >= (previousRescaleSize + rescaleIncrement))
-//        {
-//            transform.localScale = transform.localScale * rescalePercent;
-//            previousRescaleSize = cycloneMassLimit;
-//
-//            // move le cyclone because the world done shrinky
-//            player.position = player.position * rescalePercent;
-//
-//
-//
-//        }
-//        else if (cycloneMassLimit <= (previousRescaleSize - rescaleIncrement))
-//        {
-//            transform.localScale = transform.localScale * (2 - rescalePercent);
-//            previousRescaleSize = cycloneMassLimit;
-//
-//            // move el cyclone because the world done a grow
-//            player.position = player.position * (2 - rescalePercent);
-//
-//        }

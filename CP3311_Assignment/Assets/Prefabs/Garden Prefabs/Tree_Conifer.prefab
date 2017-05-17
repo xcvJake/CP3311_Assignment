@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4328248187126026}
   - component: {fileID: 33605607115146156}
   - component: {fileID: 23421585403736100}
-  - component: {fileID: 64769350423936878}
   - component: {fileID: 54176752906450386}
+  - component: {fileID: 65098512895337084}
   m_Layer: 0
   m_Name: Tree_Conifer
   m_TagString: pickup
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160981392071146}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.04799, y: -1.5754544e-15, z: 71.27684}
+  m_LocalPosition: {x: 199.5, y: 0, z: -30.1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,17 +97,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64769350423936878
-MeshCollider:
+--- !u!65 &65098512895337084
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1160981392071146}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: d0b282bb7af77994f87537a877585083, type: 3}
+  m_Size: {x: 15.948164, y: 33.31181, z: 15.948164}
+  m_Center: {x: -0.089163065, y: 16.655905, z: 0.13562965}

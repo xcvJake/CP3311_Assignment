@@ -129,6 +129,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 			other.isTrigger = false;
 			other.attachedRigidbody.useGravity = false;
 			other.attachedRigidbody.isKinematic = true;
+			other.enabled = false;
 
 			other.transform.parent = orbitingJunk.transform;
 

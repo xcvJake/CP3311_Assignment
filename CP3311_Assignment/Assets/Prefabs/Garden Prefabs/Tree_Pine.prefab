@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4262246645182770}
   - component: {fileID: 33036820837390140}
   - component: {fileID: 23278782843596400}
-  - component: {fileID: 64912282747303050}
   - component: {fileID: 54430071715133358}
+  - component: {fileID: 65491727366788020}
+  - component: {fileID: 205292866138854760}
   m_Layer: 0
   m_Name: Tree_Pine
   m_TagString: pickup
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454947880009462}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.4, y: -2.2822638e-15, z: 122.4}
+  m_LocalPosition: {x: 50.2, y: 0, z: 178.5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,8 +54,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: b23c7cde808a2694eab4be12b4a48701, type: 2}
   - {fileID: 2100000, guid: 1b4a7f4883d32e34290d443cff81a98b, type: 2}
@@ -97,17 +98,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64912282747303050
-MeshCollider:
+--- !u!65 &65491727366788020
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1454947880009462}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 610558ef87ba5b341bf091ea9ef8af0d, type: 3}
+  m_Size: {x: 22.026289, y: 34.95892, z: 24.118639}
+  m_Center: {x: -1.9833889, y: 17.47946, z: 0.51951504}
+--- !u!205 &205292866138854760
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454947880009462}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -1.9833889, y: 17.47946, z: 0.51951504}
+  m_Size: 34.95892
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0016622556
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23278782843596400}
+  m_Enabled: 1

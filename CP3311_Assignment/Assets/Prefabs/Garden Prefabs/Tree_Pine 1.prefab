@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4337791347593362}
   - component: {fileID: 33698451648780636}
   - component: {fileID: 23414326951219530}
-  - component: {fileID: 64358514500040718}
   - component: {fileID: 54747923705202554}
+  - component: {fileID: 65486932337607212}
+  - component: {fileID: 205106606104995112}
   m_Layer: 0
   m_Name: Tree_Pine 1
   m_TagString: pickup
@@ -36,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1712571808055800}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.9, y: -2.0438551e-15, z: 96.5}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 11.1, y: 0, z: 195.3}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &23414326951219530
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -53,8 +54,8 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: b23c7cde808a2694eab4be12b4a48701, type: 2}
   - {fileID: 2100000, guid: 1b4a7f4883d32e34290d443cff81a98b, type: 2}
@@ -97,17 +98,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64358514500040718
-MeshCollider:
+--- !u!65 &65486932337607212
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1712571808055800}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 749f0fcee8899d14d9fc75a4b5997df6, type: 3}
+  m_Size: {x: 22.483147, y: 32.61922, z: 22.259892}
+  m_Center: {x: 0.8448334, y: 16.30961, z: 0.59693193}
+--- !u!205 &205106606104995112
+LODGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712571808055800}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.8448334, y: 16.30961, z: 0.59693146}
+  m_Size: 32.61922
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LODs:
+  - screenRelativeHeight: 0.0019218408
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23414326951219530}
+  m_Enabled: 1

@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4577121492549502}
   - component: {fileID: 33932083701637646}
   - component: {fileID: 23742367906446046}
-  - component: {fileID: 64347848723666320}
   - component: {fileID: 54126859755069344}
+  - component: {fileID: 65478880409325858}
   m_Layer: 0
   m_Name: Plant_Corn
   m_TagString: pickup
@@ -98,17 +98,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64347848723666320
-MeshCollider:
+--- !u!65 &65478880409325858
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1110246974687526}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
+  m_Size: {x: 6.946413, y: 13.867322, z: 3.3406906}
+  m_Center: {x: -0.42927253, y: 6.933661, z: 0.43307012}
