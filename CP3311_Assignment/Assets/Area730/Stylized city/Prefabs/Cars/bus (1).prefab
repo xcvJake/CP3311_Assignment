@@ -76,10 +76,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 490280}
-  - component: {fileID: 9562784}
+  - component: {fileID: 54110431732078318}
+  - component: {fileID: 65395997417249966}
   m_Layer: 0
   m_Name: bus (1)
-  m_TagString: Untagged
+  m_TagString: pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,9 +851,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115080}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
-  m_LocalPosition: {x: 64.5, y: 254.75, z: 755.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000016292068}
+  m_LocalPosition: {x: -0.1892, y: 0.0204, z: -0.3258}
+  m_LocalScale: {x: 0.004, y: 0.004, z: 0.0050000004}
   m_Children:
   - {fileID: 477760}
   - {fileID: 438984}
@@ -1761,23 +1762,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181444}
   m_Mesh: {fileID: 4300034, guid: 7089f119f850b514c89b3e4f68025a29, type: 3}
---- !u!95 &9562784
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 115080}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 7089f119f850b514c89b3e4f68025a29, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -1789,3 +1773,30 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115080}
   m_IsPrefabParent: 1
+--- !u!54 &54110431732078318
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115080}
+  serializedVersion: 2
+  m_Mass: 500
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65395997417249966
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28.55, y: 10.56, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}

@@ -13,7 +13,7 @@ public class WorldScalingController : MonoBehaviour
 
 
 	public Transform player;
-	public float scalingAmount = 0.1f;
+	public float scalingAmount = 0.01f;
 	//WARNING: This current value results in an exponential curve, not sure if this is what we wanted / warning
 	//Might want to replace this with some nice sort of curve, but is kinda fun
 	public float smallestScale = 0.1f;

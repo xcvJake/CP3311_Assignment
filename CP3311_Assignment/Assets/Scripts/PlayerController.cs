@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour {
     Transform orbitingJunk;
 
     public int junkCount = 100;
-    public float junkPercentMultiplier = 0.1f;
+    public float junkPercentMultiplier = 1f;
 
     public float turningSpeed = 100;
     public float movementSpeed = 10;

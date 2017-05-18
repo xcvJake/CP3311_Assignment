@@ -5,28 +5,35 @@ using UnityEngine;
 public class PlayerControllerJunkRewrite : MonoBehaviour
 {
 
-	public int junkRotationSpeed = 10;
+	public int junkRotationSpeed = 4;
 	//	public float junkHeightMax = 6f;
 	public float junkHeightMin = 1f;
 	public static float cycloneMassLimit = 1f;
 
-	public int maxItemsForced = 400;
-	public int minItemsForced = 20;
-	// public float testingMassAdjust = 1f; //testing thing
+	public int maxItemsForced = 300;
+	public int minItemsForced = 50;
+	public float testingMassAdjust = 1f; //testing thing
 
 	Transform orbitingJunk;
 	CapsuleCollider cycloneCollider;
 
 	//public int junkCount = 100;
-	public float junkPercentMultiplier = 0.1f;
+	public float junkPercentMultiplier = 1f;
 
 	public float turningSpeed = 100;
-	public float movementSpeed = 10;
+	public float movementSpeed = 30;
+
+	public float cornfieldLimit = 20f;
+	public float fenceLimit = 80f;
+
+
+
 
 	float deltaTime = 0.0f;
 
 	private void Start ()
 	{
+		cycloneMassLimit = testingMassAdjust; 
 		orbitingJunk = transform.FindChild ("OrbitingJunk");
 		cycloneCollider = transform.GetComponent<CapsuleCollider> ();
 	}
@@ -122,7 +129,27 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	void OnTriggerEnter (Collider other)
 	{
 		if ((other.tag == "pickup") && (other.attachedRigidbody.mass <= cycloneMassLimit)) {
-			cycloneMassLimit += other.attachedRigidbody.mass * junkPercentMultiplier; 
+
+
+			//Depending on the area, limit mass increase, shit gets heavy fast. 
+			if (cycloneMassLimit > fenceLimit) {
+				// Must be greater than 80 to pickup fences
+				// Mass increase per item decreases by factor of fenceLimit.
+				cycloneMassLimit += (other.attachedRigidbody.mass / fenceLimit) * junkPercentMultiplier; 
+			}
+			else if (cycloneMassLimit > cornfieldLimit) { 
+				// Must be greater than 20 to enter cornfield area
+				// Mass increase per item decreases by factor of cornfieldLimit.
+				cycloneMassLimit += (other.attachedRigidbody.mass / cornfieldLimit) * junkPercentMultiplier; 
+			} else {
+				// Starting Area, No mass factor change
+				cycloneMassLimit += other.attachedRigidbody.mass * junkPercentMultiplier; 
+			}
+
+
+
+
+
 			//TODO: Increase size of collider, both width, height and Y offset based off cycloneMass (This will have to sync with increasing partical sizes or whatever)
 			//TODO: Increase size of actual cyclone 
 
