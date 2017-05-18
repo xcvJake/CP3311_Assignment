@@ -24,7 +24,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public float movementSpeed = 30;
 
 	public float cornfieldLimit = 20f;
-	public float fenceLimit = 80f;
+	public float fenceLimit = 60f;
 
 
 
