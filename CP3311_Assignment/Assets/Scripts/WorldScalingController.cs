@@ -29,7 +29,7 @@ public class WorldScalingController : MonoBehaviour
 	{
 		startingWeight = PlayerControllerJunkRewrite.cycloneMassLimit; //Allows us to start with any mass and not scale the world on start
 		startingWorldScale = transform.localScale; //Allows us to start with the map at any scale
-		orbitingStuff = player.FindChild("OrbitingJunk");
+		orbitingStuff = player.Find("OrbitingJunk");
 	}
 
 

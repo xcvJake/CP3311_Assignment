@@ -34,7 +34,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	private void Start ()
 	{
 		cycloneMassLimit = testingMassAdjust; 
-		orbitingJunk = transform.FindChild ("OrbitingJunk");
+		orbitingJunk = transform.Find ("OrbitingJunk");
 		cycloneCollider = transform.GetComponent<CapsuleCollider> ();
 	}
 

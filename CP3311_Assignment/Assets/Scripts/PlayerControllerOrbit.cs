@@ -29,7 +29,7 @@ public class PlayerControllerOrbit : MonoBehaviour {
         junkHeightArray = new float[junkCount];
         junktranslateDirectionArray = new int[junkCount];
         junkArrayIndex = 0;
-        orbitingJunk = transform.FindChild("OrbitingJunk");
+        orbitingJunk = transform.Find("OrbitingJunk");
     }
 
     void Awake()
