@@ -520,6 +520,15 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1540421816130146, guid: e2b3d887708f26443a97de6ed30c3346, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114549721054246978, guid: e2b3d887708f26443a97de6ed30c3346,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2b3d887708f26443a97de6ed30c3346, type: 2}
   m_IsPrefabParent: 0
@@ -1147,6 +1156,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 15, y: 10, z: -2}
+--- !u!114 &1032962524 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114085377957712596, guid: e2b3d887708f26443a97de6ed30c3346,
+    type: 2}
+  m_PrefabInternal: {fileID: 341774852}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &1099797153 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4398031177268756, guid: fa68e9a266aad0c4b8e7489baac723d6,
@@ -1336,6 +1351,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114100701367191204, guid: 33f2695e7e259404f86abd60f5e040b1,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1939990308}
+    - target: {fileID: 114100701367191204, guid: 33f2695e7e259404f86abd60f5e040b1,
+        type: 2}
+      propertyPath: massSlider
+      value: 
+      objectReference: {fileID: 1032962524}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33f2695e7e259404f86abd60f5e040b1, type: 2}
   m_IsPrefabParent: 0
@@ -2751,6 +2776,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4776150004617712, guid: 6b898daff2e78fe4fbe306cdf1174886,
     type: 2}
   m_PrefabInternal: {fileID: 1459041010}
+--- !u!114 &1939990308 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114193385784320384, guid: e2b3d887708f26443a97de6ed30c3346,
+    type: 2}
+  m_PrefabInternal: {fileID: 341774852}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &2002594870
 Prefab:
   m_ObjectHideFlags: 0
