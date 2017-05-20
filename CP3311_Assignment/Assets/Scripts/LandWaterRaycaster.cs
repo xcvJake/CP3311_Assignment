@@ -36,7 +36,7 @@ public class LandWaterRaycaster : MonoBehaviour {
 
 		Health -= DamageRate * Time.deltaTime;
 
-		if (Physics.Raycast (transform.position, -transform.up, out hitInfo, 10)) {
+		if (Physics.Raycast (transform.position, -transform.up, out hitInfo, 20)) {
 			if (hitInfo.transform.tag == "Water") {
 				Health += HealRate * Time.deltaTime;
 
