@@ -143,7 +143,6 @@ GameObject:
   - component: {fileID: 124908758779403534}
   - component: {fileID: 92645300395007470}
   - component: {fileID: 81131901804727898}
-  - component: {fileID: 114553257102500184}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -210,7 +209,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1835025941326298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 211.6, y: 0, z: 184.5}
+  m_LocalPosition: {x: 200.7, y: 0, z: 155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4797588414587918}
@@ -355,8 +354,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4, y: 2, z: 4}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 4, y: 4.22, z: 4}
+  m_Center: {x: 0, y: 2.71, z: 0}
 --- !u!81 &81131901804727898
 AudioListener:
   m_ObjectHideFlags: 1
@@ -371,18 +370,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999945463615152}
   m_Enabled: 1
---- !u!114 &114553257102500184
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1999945463615152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac2c05b026d3e949bee3d4d6f70461c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!114 &114913788828121158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -404,6 +391,9 @@ MonoBehaviour:
   movementSpeed: 30
   cornfieldLimit: 20
   fenceLimit: 60
+  healthSlider: {fileID: 0}
+  massSlider: {fileID: 0}
+  maxMass: 300
 --- !u!124 &124908758779403534
 Behaviour:
   m_ObjectHideFlags: 1

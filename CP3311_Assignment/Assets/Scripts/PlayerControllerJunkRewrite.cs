@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControllerJunkRewrite : MonoBehaviour
 {
@@ -26,6 +27,10 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public float cornfieldLimit = 20f;
 	public float fenceLimit = 60f;
 
+	public Slider healthSlider;  
+	public Slider massSlider;  
+	public float maxMass = 300f;
+
 
 
 
@@ -36,6 +41,8 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 		cycloneMassLimit = testingMassAdjust; 
 		orbitingJunk = transform.Find ("OrbitingJunk");
 		cycloneCollider = transform.GetComponent<CapsuleCollider> ();
+		massSlider.maxValue = maxMass;
+		healthSlider.maxValue = 100;
 	}
 
 	void Awake ()
@@ -146,9 +153,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 				cycloneMassLimit += other.attachedRigidbody.mass * junkPercentMultiplier; 
 			}
 
-
-
-
+			massSlider.value = cycloneMassLimit; 
 
 			//TODO: Increase size of collider, both width, height and Y offset based off cycloneMass (This will have to sync with increasing partical sizes or whatever)
 			//TODO: Increase size of actual cyclone 
