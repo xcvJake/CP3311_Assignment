@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 
 
@@ -13,6 +13,7 @@ public class LandWaterRaycaster : MonoBehaviour {
 	public float DamageRate = 1;
 	public float HealRate = 10;
 	private RaycastHit hitInfo;
+	public Slider healthSlider; 
 
 
 	EllipsoidParticleEmitter[] waterEffects;
@@ -21,6 +22,7 @@ public class LandWaterRaycaster : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		waterEffects = GetComponentsInChildren<EllipsoidParticleEmitter> ();
+		healthSlider.maxValue = MaxHealth;
 	}
 
 
@@ -50,6 +52,8 @@ public class LandWaterRaycaster : MonoBehaviour {
 			
 		if (Health > MaxHealth) {
 				Health = MaxHealth;
-			}
 		}
+
+		healthSlider.value = Health;
 	}
+}

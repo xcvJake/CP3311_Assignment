@@ -27,7 +27,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public float cornfieldLimit = 20f;
 	public float fenceLimit = 60f;
 
-	public Slider healthSlider;  
+	 
 	public Slider massSlider;  
 	public float maxMass = 300f;
 
@@ -42,7 +42,7 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 		orbitingJunk = transform.Find ("OrbitingJunk");
 		cycloneCollider = transform.GetComponent<CapsuleCollider> ();
 		massSlider.maxValue = maxMass;
-		healthSlider.maxValue = 100;
+
 	}
 
 	void Awake ()
