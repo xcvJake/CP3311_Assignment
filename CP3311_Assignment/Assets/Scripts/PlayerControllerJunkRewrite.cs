@@ -31,8 +31,14 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 	public Slider massSlider;  
 	public float maxMass = 300f;
 
+	public Slider healthSlider;
 
+	public bool isPlayerDead = false;
+	public bool isDeathAnimActive = false;
 
+	public GameObject deathMenu;
+	public GameObject HUD; 
+	public GameObject Lightning;
 
 	float deltaTime = 0.0f;
 
@@ -42,7 +48,6 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 		orbitingJunk = transform.Find ("OrbitingJunk");
 		cycloneCollider = transform.GetComponent<CapsuleCollider> ();
 		massSlider.maxValue = maxMass;
-
 	}
 
 	void Awake ()
@@ -52,24 +57,39 @@ public class PlayerControllerJunkRewrite : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		// Store the input axes.
-		float h = Input.GetAxisRaw ("Horizontal");
-		float v = Input.GetAxisRaw ("Vertical");
+		if (!isPlayerDead) {
+			// Store the input axes.
+			float h = Input.GetAxisRaw ("Horizontal");
+			float v = Input.GetAxisRaw ("Vertical");
 
-		// Move the player around the scene.
-		Move (h, v);
+			// Move the player around the scene.
+			Move (h, v);
 
-		// Rotate the Junk around the player
-		rotateJunk ();
-		spinJunk ();
+			// Rotate the Junk around the player
+			rotateJunk ();
+			spinJunk ();
+		}
 	}
 
 	void Update ()
 	{
 		deltaTime += (Time.deltaTime - deltaTime) * 0.1f;
 
-		cleanupCyclone (); //This must be in Update if framerate depending cleanup is wanted
+		if (healthSlider.value <= 0 && !isPlayerDead) {
+			isPlayerDead = true; 
+			
+		}
 
+		if (!isPlayerDead) {
+			cleanupCyclone (); //This must be in Update if framerate depending cleanup is wanted
+		} else {
+			if (!isDeathAnimActive) {
+				isDeathAnimActive = true;
+				Lightning.SetActive (false);
+				HUD.SetActive(false); 
+				deathMenu.SetActive(true);
+			}
+		}
 	}
 
 
