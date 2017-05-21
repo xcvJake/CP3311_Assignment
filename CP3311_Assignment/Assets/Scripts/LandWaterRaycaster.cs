@@ -10,7 +10,7 @@ public class LandWaterRaycaster : MonoBehaviour {
 
 	public float Health = 100;
 	public float MaxHealth = 100;
-	public float DamageRate = 1;
+	public float DamageRate = 2;
 	public float HealRate = 10;
 	private RaycastHit hitInfo;
 	public Slider healthSlider; 

@@ -403,7 +403,7 @@ GameObject:
   - component: {fileID: 222502976556640254}
   - component: {fileID: 114755861841822312}
   m_Layer: 5
-  m_Name: Heart
+  m_Name: WaterDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.38235295, g: 0.5910751, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1463,7 +1463,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5331c87402a2a3d4ba008aa8d1ce2c89, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf2306d03e4f0434c8a7da595ea4d933, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
