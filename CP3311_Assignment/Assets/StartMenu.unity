@@ -2434,7 +2434,6 @@ MonoBehaviour:
   - {fileID: 135542000}
   - {fileID: 1918427237}
   - {fileID: 2004615262}
-  - {fileID: 0}
   - {fileID: 1716755645}
   spawnableObjects:
   - {fileID: 1736308685}
@@ -2443,7 +2442,6 @@ MonoBehaviour:
   - {fileID: 2130490229}
   - {fileID: 1610813633}
   - {fileID: 192768428}
-  - {fileID: 0}
   - {fileID: 244457082}
 --- !u!4 &1752691923
 Transform:
