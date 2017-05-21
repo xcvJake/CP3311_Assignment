@@ -22881,6 +22881,7 @@ Prefab:
       value: 
       objectReference: {fileID: 2125213411}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 108803119911571026, guid: 899ea80e0b851714a81d14e062aaaf80,
         type: 2}
       propertyPath: m_Intensity
@@ -22921,6 +22922,8 @@ Prefab:
       value: 60
 >>>>>>> origin/master
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 899ea80e0b851714a81d14e062aaaf80, type: 2}
   m_IsPrefabParent: 0

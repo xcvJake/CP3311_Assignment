@@ -13,135 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: -1293
-    y: 429
-    width: 1179
-    height: 636
-  m_ShowMode: 0
-  m_Title: 
-  m_RootView: {fileID: 4}
-  m_MinSize: {x: 100, y: 122}
-  m_MaxSize: {x: 4000, y: 4022}
---- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12004, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PixelRect:
-    serializedVersion: 2
     x: 0
     y: 43
     width: 1920
     height: 1007
   m_ShowMode: 4
   m_Title: 
-  m_RootView: {fileID: 7}
-  m_MinSize: {x: 950, y: 542}
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 950, y: 545}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &3
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1179
-    height: 636
-  m_MinSize: {x: 100, y: 122}
-  m_MaxSize: {x: 4000, y: 4022}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &4
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 3}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1179
-    height: 636
-  m_MinSize: {x: 100, y: 122}
-  m_MaxSize: {x: 4000, y: 4022}
-  vertical: 0
-  controlID: 9511
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 653
-    width: 1409
-    height: 294
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 11}
-  - {fileID: 5}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1409
-    height: 947
-  m_MinSize: {x: 202, y: 421}
-  m_MaxSize: {x: 4002, y: 8021}
-  vertical: 1
-  controlID: 9029
---- !u!114 &7
+--- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -153,9 +34,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 8}
-  - {fileID: 10}
-  - {fileID: 9}
+  - {fileID: 3}
+  - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -163,13 +44,17 @@ MonoBehaviour:
     width: 1920
 <<<<<<< HEAD
     height: 997
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 300}
 =======
     height: 1007
   m_MinSize: {x: 950, y: 545}
 >>>>>>> origin/master
+=======
+  m_MinSize: {x: 950, y: 545}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &8
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -190,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
---- !u!114 &9
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -210,7 +95,7 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &10
+--- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -224,12 +109,17 @@ MonoBehaviour:
   m_Children:
   - {fileID: 6}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 12}
   - {fileID: 15}
 =======
   - {fileID: 9}
   - {fileID: 12}
 >>>>>>> origin/master
+=======
+  - {fileID: 7}
+  - {fileID: 10}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_Position:
     serializedVersion: 2
     x: 0
@@ -237,9 +127,10 @@ MonoBehaviour:
     width: 1920
 <<<<<<< HEAD
     height: 947
-  m_MinSize: {x: 713, y: 492}
-  m_MaxSize: {x: 18008, y: 14042}
+  m_MinSize: {x: 713, y: 495}
+  m_MaxSize: {x: 18008, y: 14045}
   vertical: 0
+<<<<<<< HEAD
   controlID: 72
 --- !u!114 &11
 =======
@@ -274,6 +165,10 @@ MonoBehaviour:
   vertical: 1
   controlID: 19791
 --- !u!114 &7
+=======
+  controlID: 12785
+--- !u!114 &6
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -290,12 +185,18 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1409
     height: 653
+=======
+    width: 1209
+    height: 947
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 12}
   m_Panes:
+<<<<<<< HEAD
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 17}
@@ -341,6 +242,15 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &9
 >>>>>>> origin/master
+=======
+  - {fileID: 12}
+  - {fileID: 13}
+  - {fileID: 14}
+  - {fileID: 11}
+  m_Selected: 0
+  m_LastSelected: 3
+--- !u!114 &7
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -353,17 +263,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 13}
   - {fileID: 14}
+=======
+  - {fileID: 8}
+  - {fileID: 9}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_Position:
     serializedVersion: 2
-    x: 1409
+    x: 1209
     y: 0
-    width: 234
+    width: 329
     height: 947
-  m_MinSize: {x: 234, y: 492}
-  m_MaxSize: {x: 10004, y: 14042}
+  m_MinSize: {x: 234, y: 495}
+  m_MaxSize: {x: 10004, y: 14045}
   vertical: 1
+<<<<<<< HEAD
   controlID: 73
 --- !u!114 &13
 =======
@@ -381,6 +297,10 @@ MonoBehaviour:
   controlID: 19741
 --- !u!114 &10
 >>>>>>> origin/master
+=======
+  controlID: 12810
+--- !u!114 &8
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -397,15 +317,20 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 234
+=======
+    width: 329
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     height: 421
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 15}
   m_Panes:
-  - {fileID: 21}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 --- !u!114 &14
 =======
     width: 451
@@ -419,6 +344,9 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &11
 >>>>>>> origin/master
+=======
+--- !u!114 &9
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -435,15 +363,16 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
     y: 421
-    width: 234
+    width: 329
     height: 526
   m_MinSize: {x: 234, y: 271}
   m_MaxSize: {x: 10004, y: 10021}
-  m_ActualView: {fileID: 22}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 22}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 --- !u!114 &15
 =======
     y: 425
@@ -458,6 +387,9 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &12
 >>>>>>> origin/master
+=======
+--- !u!114 &10
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -472,17 +404,22 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1643
+=======
+    x: 1538
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     y: 0
-    width: 277
+    width: 382
     height: 947
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 23}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 17}
   m_Panes:
-  - {fileID: 23}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -526,6 +463,9 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &13
 >>>>>>> origin/master
+=======
+--- !u!114 &11
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -549,6 +489,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 92
     width: 1407
     height: 632
@@ -559,6 +500,12 @@ MonoBehaviour:
     height: 365
   m_MaximizeOnPlay: 1
 >>>>>>> origin/master
+=======
+    y: 17
+    width: 1207
+    height: 926
+  m_MaximizeOnPlay: 1
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -566,6 +513,7 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -703.5
     m_HBaseRangeMax: 703.5
@@ -577,6 +525,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -174
     m_VBaseRangeMax: 174
 >>>>>>> origin/master
+=======
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -454.5
+    m_VBaseRangeMax: 454.5
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -585,7 +539,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -593,6 +547,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
 <<<<<<< HEAD
       width: 1407
       height: 615
@@ -604,12 +559,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 545.5, y: 174}
 >>>>>>> origin/master
+=======
+      width: 1920
+      height: 909
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 960, y: 454.5}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -703.5
       y: -307.5
@@ -621,10 +583,17 @@ MonoBehaviour:
       width: 1091
       height: 348
 >>>>>>> origin/master
+=======
+      x: -960
+      y: -454.5
+      width: 1920
+      height: 909
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1407, y: 632}
   m_ClearInEditMode: 1
@@ -638,6 +607,13 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000100000100
 --- !u!114 &14
 >>>>>>> origin/master
+=======
+  m_LastWindowPixelSize: {x: 1920, y: 926}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000100000100
+--- !u!114 &12
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -661,6 +637,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 745
     width: 1407
     height: 273
@@ -673,10 +650,18 @@ MonoBehaviour:
   m_SceneLighting: 1
   lastFramingTime: 9777.189310028456
 >>>>>>> origin/master
+=======
+    y: 92
+    width: 1207
+    height: 926
+  m_SceneLighting: 1
+  lastFramingTime: 2246.6962877462415
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 206.11047, y: -5.849636, z: 192.53368}
     speed: 2
@@ -686,6 +671,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 352.68964, y: 16.527126, z: 412.32428}
 >>>>>>> origin/master
+=======
+    m_Target: {x: 206.53702, y: -2.7698746, z: 170.23218}
+    speed: 2
+    m_Value: {x: 206.53702, y: -2.7698746, z: 170.23218}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -709,12 +699,17 @@ MonoBehaviour:
       m_Value: 0
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.2796113, y: -0.12514883, z: 0.03678857, w: 0.95121086}
+=======
+    m_Target: {x: -0.23857549, y: 0.0017637027, z: -0.00043362944, w: -0.97112226}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     speed: 2
-    m_Value: {x: 0.27961126, y: -0.12514882, z: 0.036788568, w: 0.95121074}
+    m_Value: {x: -0.23857549, y: 0.0017637027, z: -0.00043362944, w: -0.97112226}
   m_Size:
-    m_Target: 44.730255
+    m_Target: 40.905674
     speed: 2
+<<<<<<< HEAD
     m_Value: 44.730255
 =======
     m_Target: {x: 0.07047363, y: -0.91478974, z: 0.18240055, w: 0.35344493}
@@ -725,25 +720,36 @@ MonoBehaviour:
     speed: 2
     m_Value: 157.7618
 >>>>>>> origin/master
+=======
+    m_Value: 40.905674
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSceneViewRotation: {x: -0.2140759, y: -0.21735954, z: 0.0489247, w: -0.9510693}
 =======
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
 >>>>>>> origin/master
+=======
+  m_LastSceneViewRotation: {x: -0.30085194, y: 0.65031654, z: -0.31413928, w: -0.6228107}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &19
 =======
 --- !u!114 &15
 >>>>>>> origin/master
+=======
+--- !u!114 &13
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -770,10 +776,14 @@ MonoBehaviour:
     width: 1217
     height: 429
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &20
 =======
 --- !u!114 &16
 >>>>>>> origin/master
+=======
+--- !u!114 &14
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -797,26 +807,31 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 1407
-    height: 632
+    width: 1207
+    height: 926
   m_ViewPositions:
     m_KeySerializationHelper:
     - {fileID: 1107936093135535288, guid: 6315d5a747726cc439f6fc811dd6ad4b, type: 2}
     - {fileID: 1107497928506732900, guid: 0a9b8d925efef47429d4b2cf3cdd0b3d, type: 2}
-    - {fileID: 1107215716031866206, guid: 22f12c16315e3c24b9253c9b343d25e6, type: 2}
     m_ValueSerializationHelper:
     - {x: 674.2, y: 391.20007}
     - {x: 674.2, y: 349.20007}
-    - {x: 794.2, y: 288.40002}
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 22f12c16315e3c24b9253c9b343d25e6,
+  m_AnimatorController: {fileID: 9100000, guid: 0a9b8d925efef47429d4b2cf3cdd0b3d,
     type: 2}
   m_BreadCrumbs:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - m_Target: {fileID: 1107215716031866206, guid: 22f12c16315e3c24b9253c9b343d25e6,
 =======
   - m_Target: {fileID: 1107497928506732900, guid: 0a9b8d925efef47429d4b2cf3cdd0b3d,
 >>>>>>> origin/master
+=======
+  - m_Target: {fileID: 1107497928506732900, guid: 0a9b8d925efef47429d4b2cf3cdd0b3d,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: 1107497928506732900, guid: 0a9b8d925efef47429d4b2cf3cdd0b3d,
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -831,10 +846,14 @@ MonoBehaviour:
   m_LayerEditor:
     m_SelectedLayerIndex: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &21
 =======
 --- !u!114 &17
 >>>>>>> origin/master
+=======
+--- !u!114 &15
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -857,9 +876,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1411
+=======
+    x: 1211
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     y: 92
-    width: 230
+    width: 325
     height: 400
 =======
     x: 1095
@@ -869,13 +892,17 @@ MonoBehaviour:
 >>>>>>> origin/master
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 9c870000
     m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_ExpandedIDs: 2057faff7658faff4259faff625cfaffe68efaff4093faff5096faff9e97faff7498faff1afefaffe800fbff5a02fbffae04fbffee0afbff743dfbffd041fbff5c6cfbff5674fbff0477fbff5a79fbff5e7afbffac7cfbffcc7ffbffd47ffbff2e84fbff22edfbffd4fbfbff362ffcffaa53fcffb053fcff0c57fcfffc57fcff4c5afcff6c5dfcfff48ffcff3090fcff3293fdff4893fdffb273feffb873feffd673feffee77fefffa78feff4a7bfeff527bfeffd0adfeff32b2feff4c87fffffa89ffff6e8bffffbc8cffffe6fbffff0000000084c80b006c03100044371300
 =======
     m_ExpandedIDs: 5064f5ff3ecaf5ff44caf5ff4acdf5ffc21df6ffee21f6ff0823f6ffd423f6ff3e27f6ff0c5af6ffb65ef6fffa64f6ffb665f6ff7efcf6ff842ef8ff2a2ff8ff402ff8fffc3df8ff0841f8ff0c6af8ffd078f8ff860df9ff9c0df9ff480ef9ff2296f9ff5eaff9ff22fbf9ffc2fbf9ff6837faff8451faff8651faff6c53fafff47efaff5cfffaff1498fcff06acfcff167efdffccd5fdffe6dcfdff180afeff260afeff420afeff101afeffd428feff000000008c93020052480300744c0300bab30800da080c005a3a130070f81400e4421500cc46150014a3150064f51500
 >>>>>>> origin/master
+=======
+    m_ExpandedIDs: e619f7ff1e1df7ff421df7ffc64ef7ffca4ef7ff9c5df7ff866bf7ffaa6bf7ff387cf7ff3c7cf7ff0a7ff7ff0c7df8ffd48bf8ff0ab0f8ff24b0f8ffe6baf8ffeabaf8ffaebdf8fff0f4f8fff8f8f8ffdafcf8ff8c4afaff904afaff6865faffa022fbffa422fbff5e25fbff08c8fcff0cc8fcff10c8fcffdee2fcfffa29feffa42cfeffba36feff00000000d2d007005eaa0b0072760d001adb0e00946712005a511300faab1300
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -892,21 +919,29 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 13}
 =======
       m_ClientGUIView: {fileID: 10}
 >>>>>>> origin/master
+=======
+      m_ClientGUIView: {fileID: 8}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_SearchString: 
   m_ExpandedScenes:
-  - Earth
+  - SceneOne
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &22
 =======
 --- !u!114 &18
 >>>>>>> origin/master
+=======
+--- !u!114 &16
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -929,9 +964,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1411
+=======
+    x: 1211
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     y: 513
-    width: 230
+    width: 325
     height: 505
 =======
     x: 1095
@@ -958,9 +997,10 @@ MonoBehaviour:
   m_LastFoldersGridSize: 16
 <<<<<<< HEAD
   m_LastProjectPath: E:\CP3311 Simulation Assignment\CP3311_Assignment\CP3311_Assignment
-  m_IsLocked: 1
+  m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
+<<<<<<< HEAD
     m_SelectedIDs: 8e250000
     m_LastClickedID: 9614
     m_ExpandedIDs: 000000008e25000082270000782a0000482f000092310000cc310000aa330000b633000066340000ae3400003a3500000c3800001c380000e6630000e863000000ca9a3bffffff7f
@@ -973,6 +1013,11 @@ MonoBehaviour:
     m_LastClickedID: 32920
     m_ExpandedIDs: 00000000988000005e810000228200004e83000054830000728300001a8400001c840000708400008e840000168500008c850000928500006aa200006ca2000000ca9a3bffffff7f
 >>>>>>> origin/master
+=======
+    m_SelectedIDs: 1a820000
+    m_LastClickedID: 33306
+    m_ExpandedIDs: 000000001a820000e08200008c830000948400009a840000b28400004e8500005085000098850000aa850000d6850000848600008a860000faf80000fcf8000000ca9a3bffffff7f
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -989,10 +1034,14 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 14}
 =======
       m_ClientGUIView: {fileID: 11}
 >>>>>>> origin/master
+=======
+      m_ClientGUIView: {fileID: 9}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1005,10 +1054,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000008e25000082270000782a0000482f000092310000cc310000aa330000b633000066340000ae3400003a3500000c3800001c380000e6630000e8630000
 =======
     m_ExpandedIDs: 00000000988000005e810000228200004e83000054830000728300001a8400001c840000708400008e840000168500008c850000928500006aa200006ca2000000ca9a3bffffff7f
 >>>>>>> origin/master
+=======
+    m_ExpandedIDs: 000000001a820000e08200008c830000948400009a840000b28400004e8500005085000098850000aa850000d6850000848600008a860000faf80000fcf8000000ca9a3bffffff7f
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1037,11 +1090,15 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: b48eedff144a0800a0cd0c004a7f000000000000f424000052280000b02900006c820000e452000062820000f6240000f02e0000a63c0000047e000024800000807f0000868200009a8200008a8200008a800000dc3b0000a43b000036330000a82b0000dc5400002a3b0000d23b0000f23b000004640000
 =======
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: b48eedff144a0800a0cd0c004a7f000000000000f424000052280000b02900006c820000e452000062820000f6240000f02e0000a63c0000047e000024800000807f0000868200009a8200008a8200008a800000dc3b0000a43b000036330000a82b0000dc5400002a3b0000fa2f0000
 >>>>>>> origin/master
+=======
+    m_ExpandedInstanceIDs: b48eedff144a0800a0cd0c004a7f000000000000f424000052280000b02900006c820000e452000062820000f6240000f02e0000a63c0000047e000024800000807f0000868200009a8200008a8200008a800000dc3b0000a43b000036330000a82b0000dc5400002a3b0000
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1058,10 +1115,14 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 14}
 =======
       m_ClientGUIView: {fileID: 11}
 >>>>>>> origin/master
+=======
+      m_ClientGUIView: {fileID: 9}
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1072,12 +1133,17 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 60}
     m_GridSize: 16
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_DirectoriesAreaWidth: 110
 --- !u!114 &23
 =======
   m_DirectoriesAreaWidth: 206
 --- !u!114 &19
 >>>>>>> origin/master
+=======
+  m_DirectoriesAreaWidth: 143
+--- !u!114 &17
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -1100,9 +1166,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1645
+=======
+    x: 1540
+>>>>>>> parent of db9971e... Ayyyy here we go, im dumb
     y: 92
-    width: 275
+    width: 380
     height: 926
 =======
     x: 1546
@@ -1113,7 +1183,7 @@ MonoBehaviour:
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
-    m_CachedPref: 485
+    m_CachedPref: 355
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}

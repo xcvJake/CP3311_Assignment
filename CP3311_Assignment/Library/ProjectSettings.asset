@@ -38,7 +38,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 09fee1f99ca0c46489adc397c6c372a3, type: 3}
+  - logo: {fileID: 21300000, guid: f5dd17add3e7e4c468d13df7f4cbccab, type: 3}
     duration: 3
   m_SplashScreenBackgroundLandscape: {fileID: 1, guid: 00000000000000000000000000000000,
     type: 0}
@@ -231,13 +231,13 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 2800000, guid: 4f6a5d9b56a5f9f48b3f9672bd38cde8,
+  resolutionDialogBanner: {fileID: 2800000, guid: 977dcc2a9bc40c54ca1a1d16ba2e39aa,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: Standalone
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 8408f2bc7e1b136448bbc2eaec828cf5, type: 3}
+      m_Icon: {fileID: 2800000, guid: c10d472b119cfbd4bb6a2d3efd49c8e1, type: 3}
       m_Width: 1024
       m_Height: 1024
     - serializedVersion: 2
@@ -264,12 +264,6 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 16
       m_Height: 16
-  - m_BuildTarget: 
-    m_Icons:
-    - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 8408f2bc7e1b136448bbc2eaec828cf5, type: 3}
-      m_Width: 128
-      m_Height: 128
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
