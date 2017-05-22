@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 sceneSetups: []
+=======
+sceneSetups:
+- path: Assets/CityMapSmaller.unity
+  isLoaded: 1
+  isActive: 1
+>>>>>>> I_hate_Git
