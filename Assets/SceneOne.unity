@@ -22914,6 +22914,10 @@ Prefab:
       propertyPath: fenceLimit
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4797588414587918, guid: 899ea80e0b851714a81d14e062aaaf80, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 899ea80e0b851714a81d14e062aaaf80, type: 2}
   m_IsPrefabParent: 0
