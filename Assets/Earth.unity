@@ -20311,6 +20311,11 @@ Prefab:
       propertyPath: Lightning
       value: 
       objectReference: {fileID: 217951240}
+    - target: {fileID: 108803119911571026, guid: 899ea80e0b851714a81d14e062aaaf80,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 899ea80e0b851714a81d14e062aaaf80, type: 2}
   m_IsPrefabParent: 0

@@ -38,7 +38,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: f5dd17add3e7e4c468d13df7f4cbccab, type: 3}
+  - logo: {fileID: 21300000, guid: 6f4b65f0195b483439fcbdf79c5f709a, type: 3}
     duration: 3
   m_SplashScreenBackgroundLandscape: {fileID: 1, guid: 00000000000000000000000000000000,
     type: 0}
@@ -231,7 +231,7 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 2800000, guid: 977dcc2a9bc40c54ca1a1d16ba2e39aa,
+  resolutionDialogBanner: {fileID: 2800000, guid: 9e7e087b26fbca140b0bb3a2c9af7440,
     type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: Standalone
@@ -264,6 +264,12 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 16
       m_Height: 16
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: cc39c15963222464fb4b6e12f58e0959, type: 3}
+      m_Width: 128
+      m_Height: 128
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
   m_BuildTargetVRSettings: []
@@ -520,7 +526,7 @@ PlayerSettings:
   psp2InfoBarColor: 0
   psp2UseDebugIl2cppLibs: 0
   psmSplashimage: {fileID: 0}
-  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 977dcc2a9bc40c54ca1a1d16ba2e39aa,
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 9e7e087b26fbca140b0bb3a2c9af7440,
     type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
   spritePackerPolicy: 
