@@ -1,3 +1,5 @@
+<img src="https://github.com/xcvJake/CP3311_Assignment/blob/master/CycSimSplashScreen.png" alt="Cyclone Simulator 2017"/>
+
 # Cyclone Simulator 2017
 ##### CP3311 Submission by
 - [Jack Newman]
