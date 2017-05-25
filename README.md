@@ -3,8 +3,10 @@
 - [Jack Newman]
 - [Jake Wood]
 
-Youtube Link:  youtu.be/jJgSgEDOago   
+Youtube Link:  youtu.be/jJgSgEDOago
+
 See Releases for a built Windows executable
+
 Created with Unity **5.6**
 
 [Jack Newman]: <https://github.com/jc260552>
